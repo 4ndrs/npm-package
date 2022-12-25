@@ -1,0 +1,30 @@
+{
+  "name": "npm-package",
+  "version": "1.0.0",
+  "description": "Example npm package for installing and executing",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && chmod 755 dist/index.js"
+  },
+  "bin": {
+    "npm-package-test": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4ndrs/npm-package.git"
+  },
+  "author": "4ndrs <andres.degozaru@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4ndrs/npm-package/issues"
+  },
+  "homepage": "https://github.com/4ndrs/npm-package#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "typescript": "^4.9.4"
+  }
+}
