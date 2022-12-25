@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && chmod 755 dist/index.js"
+    "build": "tsc"
   },
   "bin": {
-    "npm-package-test": "./dist/index.js"
+    "npm-package-test": "./bin/npm-package-test"
   },
   "repository": {
     "type": "git",
