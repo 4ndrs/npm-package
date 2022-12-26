@@ -15,7 +15,9 @@ const parseArgs = async () => {
         describe: "Name to greet",
       },
     })
-    .usage("Usage: $0 -n [name]");
+    .usage("Usage: $0 -n [name]")
+    .alias("help", "h")
+    .alias("version", "v");
 
   const { name } = await parser.argv;
 
