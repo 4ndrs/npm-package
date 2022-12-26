@@ -13,6 +13,7 @@ const parseArgs = async () => {
         type: "string",
         default: "World",
         describe: "Name to greet",
+        requiresArg: true,
       },
     })
     .usage("Usage: $0 -n [name]")
