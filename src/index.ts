@@ -7,7 +7,12 @@ export const main = async () => {
 
 const parseArgs = async () => {
   const parser = yargs(process.argv.slice(2)).options({
-    name: { type: "string", default: "World" },
+    name: {
+      alias: "n",
+      type: "string",
+      default: "World",
+      describe: "Name to greet",
+    },
   });
 
   const { name } = await parser.argv;
