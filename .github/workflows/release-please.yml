@@ -8,12 +8,6 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
-        with:
-          release-type: node
-          package-name: npm-package
-          extra-files: npm-package-*.tgz
-
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -22,3 +16,9 @@ jobs:
           npm ci
           npm run build
           npm pack
+
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: npm-package
+          extra-files: npm-package-*.tgz
