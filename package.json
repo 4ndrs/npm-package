@@ -1,6 +1,6 @@
 {
   "name": "npm-package",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Example npm package for installing and executing",
   "main": "dist/index.js",
   "scripts": {
