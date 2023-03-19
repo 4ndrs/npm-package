@@ -31,6 +31,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           prerelease: true
-          name: bleeding-edge
           tag_name: bleeding-edge
           files: npm-package-*.tgz
