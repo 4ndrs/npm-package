@@ -32,4 +32,5 @@ jobs:
         with:
           prerelease: true
           tag_name: bleeding-edge
+          body: Pre-release with the latest commits
           files: npm-package-*.tgz
