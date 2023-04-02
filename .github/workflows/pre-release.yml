@@ -27,6 +27,9 @@ jobs:
           npm run build
           npm pack .
 
+      - name: Delete previous pre-release
+        run: gh release delete --yes bleeding-edge
+
       - name: Create pre-release
         uses: softprops/action-gh-release@v1
         with:
