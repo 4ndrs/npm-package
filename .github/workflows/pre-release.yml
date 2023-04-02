@@ -28,7 +28,7 @@ jobs:
           npm pack .
 
       - name: Delete previous pre-release
-        run: gh release delete --yes bleeding-edge
+        run: gh release delete --yes --cleanup-tag bleeding-edge
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
