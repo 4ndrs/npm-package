@@ -29,6 +29,8 @@ jobs:
 
       - name: Delete previous pre-release
         run: gh release delete --yes bleeding-edge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create pre-release
         uses: softprops/action-gh-release@v1
